@@ -17,7 +17,10 @@ function Center() {
     <div>
       <div className="flex flex-wrap items-center justify-center">
         {recipes.map((recipe) => (
-          <div className="border m-5 border-gray-200 rounded-lg max-w-lg">
+          <div
+            className="border m-5 border-gray-200 rounded-lg max-w-lg"
+            key={recipe.recipe.label}
+          >
             <img
               src={recipe.recipe.image}
               className="border-t rounded-t w-full"
